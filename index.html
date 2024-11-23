@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phynix from Abinara-1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/802e61fb40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Penghargaan</a></li>
+                <li><a href="#">Galleri</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p>Final Project Individu</p>
+        <h1> <span>PHYNIX🥶</span></h1><h2></h1><br>Sang Penyelamat Comel dari Abinara-1</h2>
+        
+       </div>
+    </div>
+</div>
+<!---------------Tentang---------------->
+<div id="about">
+    <div> class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Phynix 😱</h1>
+                <p>Phynix adalah robot penyelamat yang lucu, ceria, dan selalu siap membantu! Ia berani seperti pahlawan, <br>
+                    suka bermain, dan jadi sahabat setia mahasiswa. Dengan senyum manisnya(anggap aja punya bibir),<br>
+                     Phynix mengajak semua anak untuk belajar hal-hal baik sambil bersenang-senang.<br>
+                      Mari bertualang bersama Phynix! </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('experience')">Kehidupan</p>
+                        <p class="tab-links" onclick="opentab('education')">Fitur</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Penyelamat Bumi</span><br>Melindungi Manusia dari alien</li>
+                            <li><span>Pembantai Univ Lain</span><br>jangan disharelock! nanti diparani🥶</li>
+                            <li><span>Membantu Kalkulus</span><br>Cukup diliat waktu kalkulus dijamin hidup tenang</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>KRSRI</li>
+                            <li><span>2022</span><br>KRSRI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sigma</span><br>Dingin banget si dia</li>
+                            <li><span>Skibdi</span><br>Kadang sedikit icikiwir</li>
+                            <li><span>Comel</span><br>Gemes bet pengen remuk</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------SERVICE--------------->
+<div id="'services">
+    <div class="container">
+        <h1 class="sub-title">Wujud Aseli</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i> <!-------------Nambahin ikon secara online--------------->
+                <h2>Program</h2>
+                <p>Simak lebih dalam tentang Phynix di kehidupan nyata.</p>
+                    <a href='https://drive.google.com/drive/folders/1DuiWBtT7-rLhILvrhblePr_4BDcEu9qs?usp=drive_link'target="_blank">Learn more</a>
+                 
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Robot</h2>
+                <p>Lihat bagaimana Wujud Aseli si Robot Phynix dan bagaimana dia dilahirkan dan intinya gilak keren banget coy si Phynix ini!.</p>
+                    <a href='https://drive.google.com/file/d/1dFub8aH6rz_ch9ZNkaESeojeu9ThtqeK/view?usp=drive_link' target="_blank">Learn more</a>
+                 
+                 
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Merchandise</h2>
+                <p>Bawa pahlawan comel ke kosmu dengan Official Merch dari sang Phynix! Dengan desain lucu dan menjengkelkan, Phynix siap menjadi teman setiamu di kelas kalkulus atau koleksi favoritmu. Cocok untuk ngelempar pala ayang atau inspirasi harian kamu😘!
+
+                    .</p>
+                    <a href='https://drive.google.com/file/d/1IDIEV2PvVNB06hWB7k1lyEPUHApMxfM0/view?usp=drive_link' target="_blank">Learn more</a>
+                   
+            </div>   
+        </div>
+    </div>
+</div>
+
+<!---------------Portofolio-------------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">Pap si Phynix</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }  
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
+
